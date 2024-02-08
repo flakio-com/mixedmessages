@@ -18,7 +18,6 @@ const generateDog = () => {
         randCatVal = randNum(catValue.length);
         newArr.push(catValue[randCatVal])
     }
-    return `You should ${newArr[1]} a ${newArr[0]} dog and name it ${newArr[3]}. I'm sure you will ${newArr[2]} it!`
+    document.getElementById('clickValue').innerText = `You should ${newArr[1]} a ${newArr[0]} dog and name it ${newArr[3]}. I'm sure you will ${newArr[2]} it!`;
 }
 
-console.log(generateDog())
